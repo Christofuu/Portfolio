@@ -1,25 +1,32 @@
 body {
-position: absolute;
+/* position: absolute; */
 background: -webkit-linear-gradient(270deg, #1C8572 0%, #005A8C 100%);
 background-blend-mode: screen;
 mix-blend-mode: normal;
+}
+
+.bodyClass {
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 html {
     height: 100vh;
 }
 
+.nameAndPicture {
+    display: flex;
+    flex-direction: column;
+}
+
 .name {
-    /* position: absolute; */
-    width: 289px;
-    height: 106px;
-    
     font-family: 'Lato';
     font-style: normal;
     font-weight: 500;
     font-size: 42px;
     line-height: 53px;
-    /* or 126% */
     letter-spacing: 0.05em;
     
     color: #FFFFFF;
@@ -38,28 +45,44 @@ img {
 }
 
 .aboutMe {
-    /* Software Developer San Diego, CA */
+    width: 289px;
+    margin-left: 10px;
 
-/* position: absolute; */
-width: 289px;
-height: 81px;
-margin-left: 10px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    /* or 146% */
+    letter-spacing: 0.09em;
 
-font-family: 'Lato';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 35px;
-/* or 146% */
-letter-spacing: 0.09em;
+    color: #FFFFFF;
 
-color: #FFFFFF;
-
-opacity: 0.9;
+    opacity: 0.9;
 
 }
 
+.aboutMe h3 {
+    font-weight: 100;
+}
 
+.skills {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 24px;
+    line-height: 35px;
+    letter-spacing: 0.09em;
+    padding-left: 10px;
 
+    color: #FFFFFF;
+}
 
+.skills h2, h3 {
+    font-weight: 100;
+}
+
+.languages {
+    /* padding-top: 45px; */
+}
 
