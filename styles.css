@@ -33,15 +33,13 @@ html {
     font-family: 'Lato';
     font-style: normal;
     font-weight: 500;
-    font-size: 42px;
-    line-height: 53px;
+    font-size: 36px;
     letter-spacing: 0.05em;
     
     color: #FFFFFF;
     
     opacity: 0.9;
-    padding: 10px;
-    margin-top: 0px;
+    margin:auto;
 }
 
 img {
@@ -49,23 +47,21 @@ img {
     width: 280px;
     height: 274px;
     opacity: 0.9;
-    padding: 10px;
 }
 
 .bio {
-    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100;
 }
 
 .aboutMe {
     width: 290px;
-    margin-left: 10px;
-
     font-family: 'Lato';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 100;
     font-size: 24px;
     line-height: 30px;
-    /* or 146% */
     letter-spacing: 0.09em;
 
     color: #FFFFFF;
@@ -78,21 +74,33 @@ img {
     font-weight: 100;
 }
 
+.aboutMe a:link {
+    color:#FFFFFF;
+}
+
+.aboutMe a:visited {
+    color:#ff6464;
+}
+
+.aboutMe a:hover {
+    color:#ff0000;
+}
+
 .skills {
     font-family: 'Lato';
     font-style: normal;
     font-weight: 100;
     font-size: 24px;
-    line-height: 35px;
     letter-spacing: 0.09em;
-    padding-left: 10px;
-    flex-grow: 1;
+    flex-direction: column;
+    flex: 1 1 100;
 
     color: #FFFFFF;
 }
 
 .skills h2, h3 {
     font-weight: 100;
+    margin-top:auto;
 }
 
 .experience {
@@ -100,16 +108,15 @@ img {
     font-style: normal;
     font-weight: 100;
     font-size: 24px;
-    line-height: 35px;
     letter-spacing: 0.09em;
-    padding-left: 10px;
-    flex-grow: 1;
+    flex: 1 1 100;
 
     color: #FFFFFF;
 }
 
 .experience h2 {
     font-weight: 100;
+    margin-top:auto;
 }
 
 
