@@ -6,11 +6,6 @@ body {
     background-blend-mode: screen;
     background-attachment: scroll;
     mix-blend-mode: normal;
-    display:flex;
-    flex-flow: row wrap;
-    align-items:flex-start;
-    justify-content: space-evenly;
-    flex: 1 1 100;
 }
 
 body:before {
@@ -29,17 +24,49 @@ html {
    margin: 0;
 }
 
-.name {
-    font-family: 'Lato';
+.main-menu {
+    position:fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: auto;
+    
+}
+
+.main-menu-nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #fff;
+    font-size: 1.6rem;
+    padding-bottom: 1em;
+}
+
+* {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     font-style: normal;
+}
+
+.header {
+    text-align: center;
+    padding: 32px 0 0 16px;
+    color: #fff;
+}
+
+.homepage {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.homepage h2 {
     font-weight: 500;
     font-size: 36px;
-    letter-spacing: 0.05em;
-    
+    letter-spacing: 0.05em;  
     color: #FFFFFF;
-    
     opacity: 0.9;
-    margin:auto;
 }
 
 img {
@@ -47,6 +74,7 @@ img {
     width: 280px;
     height: 274px;
     opacity: 0.9;
+    object-fit: cover;
 }
 
 .bio {
@@ -57,8 +85,6 @@ img {
 
 .aboutMe {
     width: 290px;
-    font-family: 'Lato';
-    font-style: normal;
     font-weight: 100;
     font-size: 24px;
     line-height: 30px;
@@ -87,8 +113,6 @@ img {
 }
 
 .skills {
-    font-family: 'Lato';
-    font-style: normal;
     font-weight: 100;
     font-size: 24px;
     letter-spacing: 0.09em;
@@ -98,14 +122,12 @@ img {
     color: #FFFFFF;
 }
 
-.skills h2, h3 {
+.skills h3 {
     font-weight: 100;
     margin-top:auto;
 }
 
 .experience {
-    font-family: 'Lato';
-    font-style: normal;
     font-weight: 100;
     font-size: 24px;
     letter-spacing: 0.09em;
@@ -116,7 +138,6 @@ img {
 
 .experience h2 {
     font-weight: 100;
-    margin-top:auto;
 }
 
 
